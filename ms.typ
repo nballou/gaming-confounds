@@ -64,37 +64,52 @@ line-numbering: false,
 
 = Introduction
 
-A series of recent studie has found no meaningful relationship between the amount of time people spend playing video games (playtime) and their wellbeing or mental health @BallouEtAl2024Registered @VuorreEtAl2022Time @LarrieuEtAl2023How. However, while these studies have strengthened the case that raw playtime is unlikely to affect wellbeing for most players---and pushed the conversation towards specific qualitative aspects of play such as a game's social affordances @CrenshawNardi2016It, time of day when play occurs @DrummondSauer2020Timesplitters, and player motivation @BruhlmannEtAl2020Motivational\-\-\-they have yet to conclusively rule out the possibility that playtime does affect people, at least some of the time.
+A series of recent studies has found no meaningful relationship between the amount of time people spend playing video games (playtime) and their wellbeing or mental health @BallouEtAl2024Registered @VuorreEtAl2022Time @LarrieuEtAl2023How. However, while these studies have strengthened the case that raw playtime is unlikely to affect wellbeing for most players---and pushed the conversation towards specific qualitative aspects of play such as a game's social affordances @CrenshawNardi2016It, time of day when play occurs @DrummondSauer2020Timesplitters, and player motivation @BruhlmannEtAl2020Motivational\-\-\-they have yet to conclusively rule out the possibility that playtime does causally affect people, at least some of the time. A causal understanding of games and mental health remains a vital prerequisite for informing evidence-based policy, behavioral management strategies and interventions, and design guidelines for the games industry.
 
-The reason for the continued lack of certainty is, in large part, a reflection of the inherent challenge of making causal inferences from observational data. It remains difficult and rare for researchers to directly intervene on gaming behavior in a naturalistic setting (as opposed to a short game session in a lab, for example)---even in a sister field such as violent video games and aggression where experiments are easier to conduct, they represent just 19% of studies in the literature @Ferguson2015angry. This means that our understanding of how games affect mental health comes largely from qualitative studies and observational designs where people are surveyed about their gaming and wellbeing. 
+Our continued uncertainty is, in large part, a reflection of the inherent challenge of making causal inferences from observational data. It remains difficult and rare for researchers to directly intervene on gaming behavior in a naturalistic setting (as opposed to a short game session in a lab, for example)---even in a sister field such as violent video games and aggression where experiments are easier to conduct, they make up just 19% of studies @Ferguson2015angry. This means that our understanding of how games affect mental health comes largely from qualitative studies and observational designs where people are surveyed about their gaming and wellbeing. 
 
 To estimate causal effects from observational data, whether cross-sectional or longitudinal, researchers need an understanding of the data-generating process @LohRen2023Unfulfilled. In any complex psychological topic such as how playing games interacts with mental health, the data-generating process is likely to be exceptionally complicated @BallouEtAl2024How, rife with mediators, effect size modification (moderation), colliders, and---perhaps most frequently discussed---confounders. Confounds are factors that influence both gaming and wellbeing. If unaccounted for, confounders can both create spurious correlations or bias true effects towards zero @Rohrer2018thinking. 
 
-Recent playtime and wellbeing studies have made efforts to deal with the issue of confounding by adjusting for factors age, gender, employment, and education (e.g., #npc(<BallouEtAl2024Perceived>) #npc(<JohnsonEtAl2016Motivationsa>) #npc(<SauterEtAl2020Social>)). However, we argue that this does not go far enough: researchers need better theoretical information to specify a complete set of confounding factors, especially when confounders are time-varying, rather than stable characteristics such as gender. 
+At present, the literature does not provide a systematic or comprehensive list of potential confounding factors in the relationship between gaming and wellbeing. While studies commonly adjust for factors such as age, gender, employment, and education (e.g., #npc(<BallouEtAl2024Perceived>) #npc(<JohnsonEtAl2016Motivationsa>) #npc(<SauterEtAl2020Social>)), we argue that this does not go far enough: Many more factors beyond the commonly-used list of stable demographic characteristics influence the relationship between gaming engagement and mental health. To date, researchers have lacked the necessary information to identify, measure, and adjust for these additional confounds. Without closer attention to confounding, observational studies---which comprises the vast majority of work on this topic---will continue to have extremely limited value for shedding light on cause and effect. 
 
-In our view, researchers have lacked sufficient information to identify, measure and adjust for the set of variables that confound this crucial relationship---to our knowledge, no theory on the topic of media use and mental health specifies a comprehensive set of potential confounds, leaving researchers to make ad hoc decisions about what covariates to include in their statistical models. In addition to producing biased estimates, this increases opportunities for p-hacking via the selective inclusion or exclusion of potential confounds. 
-
-To address this, we conducted a theoretical thematic analysis of player-reported confounds. Our results make several contributions: 
+To address this need, we conducted a theoretical thematic analysis of player-reported confounds. Our results make several contributions: 
 
 1. We present the most comprehensive list to date of variables that may need to be included in a statistical model to produce an unbiased estimate of the effect of gaming on wellbeing, including but not limited to physical health, holiday periods, work-related stress, and family illness or death
-2. We show that confounds have the potential to bias effects in either direction: some confounds would bias observed relationships positively by causing an increase or decrease in both playtime and wellbeing, while others would bias it negatively by causing an increase in one and a decrease in the other
+2. We identify both positive and negative confounds, which may therefore bias effects in either direction: some confounds would bias observed relationships positively by causing an increase or decrease in both playtime and wellbeing, while others would bias it negatively by causing an increase in one and a decrease in the other
 3. We demonstrate that several confounds have _moderated_ effects on gaming, highlighting the need for more rigorous theory-building---for example, being sick tends to decrease wellbeing and reduce gaming if associated with tiredness and difficulty focusing, whereas it tends to increase gaming if tiredness is not a primary symptom 
 
 == Confounding
 
-One of the fundamental concepts in causal inference is _confounding_. Confounding occurs when a third variable jointly causes both the predictor and outcome of interest @Rohrer2018thinking. A commonly used example of confounding is the observation that ice cream sales are correlated with rates of drowning. However, it is neither the case that a delicious ice cream makes people worse swimmers (ice cream $arrow.r$ drowning), nor that people's last wish when drowning is a scoop of Cherry Garcia (drowning $arrow.r$ ice cream). Instead, it's a third factor---summertime (or perhaps temperature)---that causes both ice cream sales and rates of drowning to increase, creating a spurious correlation and a timely reminder of the adage "correlation does not imply causation".
+#figure(
+  placement: auto,
+  scope: "parent",
+  image("figures/toy_example.png", width: 90%),
+  caption: [
+    Illustration of confounding. 
+  ],
+) <fig-toy>
 
-Perhaps less discussed is the adage's negation, which is equally true: _the absence of correlation does not imply the absence of causation_. Confounding is often used to explain spurious significant relationships, but so too might confounding suppress a true effect. Imagine there is a true causal effect of coffee consumption on productivity (there certainly is for the lead author); yet, in a correlational study, we find that coffee drinkers tend to report similar productivity levels as non-coffee drinkers. This can be explained by an unmeasured confounder: sleep quality. People who slept poorly are more likely to drink coffee, but poor sleep also decreases productivity. The negative effect of poor sleep cancels out the positive effect of coffee, biasing the true effect towards zero.
+For many researchers, the ultimate goal of social scientific research is to understand cause and effect---we want to be able to predict in advance how a given change will affect people, intervene i. In the case of gaming research, this includes broad goals such as establishing parenting strategies (based on e.g., evidence that setting a time limit of X hours will, on average, cause improved well-being), policy changes (based on e.g., evidence that restricting design feature Y will, on average, cause fewer people to develop problem gaming), or design guidelines (based on e.g., evidence that including design feature Z will, on average, cause more toxicity between players). To establish cause and effect, we apply causal inference methods. (An introduction to causal inference is well beyond the scope of this article, but we refer readers to #npc(<Rohrer2018thinking>), #npc(<Dablander2020introduction>), and #npc(<MagnussonEtAl2024Harmful>) as a starting point).
 
-The importance of confounding is broadly understood in psychology, and indeed in research on digital media @ElsonEtAl2015Comparing @EtchellsEtAl2016Prospective @Ballou2023Manifesto. Attempting to estimate causal effects from observational data by controlling for potential confounders is common practice across the discipline: researchers commonly include covariates such as age, gender, and socio-economic status in statistical models with the hope that this will reduce or eliminate confounding (e.g., #npc(<JohnsonEtAl2016Motivationsa>) #npc(<SauterEtAl2020Social>)). Adjusting for these stable characteristics that pre-date the observation of both the predictor (here, gaming) and outcome (here, well-being) is generally a sound practice with the potential to reduce bias and improve precision, among other benefits @GelmanEtAl2020Regression. 
+One of the fundamental concepts in causal inference is _confounding_---the focus of this article. Confounding occurs when a third variable jointly causes both the predictor and outcome of interest @Rohrer2018thinking. A commonly used example of confounding is the observation that ice cream sales are correlated with rates of drowning (@fig-toy, top left). However, it is neither the case that a delicious ice cream makes people worse swimmers (ice cream $arrow.r$ drowning), nor that people's last wish when drowning is a scoop of Cherry Garcia (drowning $arrow.r$ ice cream). Instead, it's a third factor---summertime (or perhaps temperature)---that causes both ice cream sales and rates of drowning to increase, creating a spurious correlation and a timely reminder of the adage "correlation does not imply causation" (@fig-toy, top right).
 
-Much more difficult to deal with, however, are _time-varying_ confounds. As media research shifts towards greater emphasis on longitudinal designs capable of evidencing within-person effects over time, we also need to grapple with confounds that may differ at different points in the study. For example, in a study of the relationship between gaming and mental health, age and gender are stable throughout the study, but sleep quality or workload may vary. These time-varying factors could independently influence both social media use and mental health at different points, complicating the disentangling of causal relationships.
+Perhaps less discussed is the adage's negation, which is equally true: _the absence of correlation does not imply the absence of causation_. Confounding is often used to explain spurious relationships, but can also suppress a true effect. Imagine there is a true causal effect of coffee consumption on productivity (there certainly is for the lead author); yet, in a correlational study, we find no difference in productivity between coffee drinkers and non-coffee drinkers (@fig-toy, bottom left). This can be explained by an unmeasured confounder: sleep quality. People who slept poorly are more likely to drink coffee, but poor sleep also decreases productivity. The negative effect of poor sleep cancels out the positive effect of coffee, biasing the true effect towards zero (@fig-toy, bottom right).
+
+The importance of confounding is broadly understood in digital media research @ElsonEtAl2015Comparing @EtchellsEtAl2016Prospective @Ballou2023Manifesto. Controlling for potential confounders with the (often implicit) aim of estimating causal effects from observational data is common practice across the discipline: researchers regularly include covariates such as age, gender, and socio-economic status in statistical models with the aim of reducing or eliminating confounding (e.g., #npc(<JohnsonEtAl2016Motivationsa>) #npc(<SauterEtAl2020Social>)). Adjusting for such stable demographic factors is generally a sound practice with the potential to reduce bias and improve precision, among other benefits @GelmanEtAl2020Regression.
+
+However, demographic characteristics such as age and gender represent just the tip of the confound iceberg. Many more factors have the potential to independently influence both the predictor (here, video game playtime) and outcome (here, wellbeing). These range from trait-level personality characteristics (e.g., extraversion), to genetic factors and neurodivergence (e.g., ADHD), to developmental factors (e.g., adverse childhood expriences), to so-called time-varying confounds such as job-related stress, injuries or health conditions, and much more. 
+
+Very little research has sought to systematically identify which of these potential confounds (or others) may materially impact the results of research on gaming and mental health. The field's narrow attention to stable demographic factors as the primary source of confounding at the expense of other health, psychology, and social factors places severe constraints on both theory development and statistical modelling.
+
+From a theoretical standpoint, neglecting potential confounders oversimplifies how gaming might influence wellbeing. Failing to specify these variables in conceptual models leaves the mechanisms and temporal dynamics underlying the gaming-wellbeing relationship unclear, impedes the ability to determine why and when gaming matters, and creates ambiguity about causal directions @PrestwichEtAl2015Using. Factors such as stress, social support, or daily mood fluctuations may either hide or magnify gaming's effects if they are not identified and measured, making theory-building incomplete. By systematically accounting for these confounders, researchers can develop richer models, clarify the boundaries of existing theories, and produce more nuanced explanations of the interplay between gaming and wellbeing.
+
+From a modelling standpoint, a lack of guidance about which confounds are relevant forces researchers to make ad hoc decisions about what covariates to include in their statistical models. In addition to producing biased estimates, this increases opportunities for p-hacking via selective and atheoretical inclusion or exclusion of potential confounds @SimmonsEtAl2011falsepositive.
+
+// Much more difficult to deal with, however, are _time-varying_ confounds. As media research shifts towards greater emphasis on longitudinal designs capable of evidencing within-person effects over time, we also need to grapple with confounds that may differ at different points in the study. For example, in a study of the relationship between gaming and mental health, age and gender are stable throughout the study, but sleep quality or workload may vary. These time-varying factors could independently influence both social media use and mental health at different points, complicating the disentangling of causal relationships.
 
 == Present Research
 
-At present, the literature does not provide a systematic or comprehensive list of potential confounding factors in the relationship between gaming and wellbeing. This limits researchers' ability to identify, measure, and adjust for confounding factors, and thereby limits the value of the observational data we collect---data which comprises the vast majority of work on this topic---for shedding light on cause and effect.
-
-To address this need, we turned to players themselves and asked the research question: _What factors independently influence both gaming and wellbeing in the eyes of video game players?_
+It is clear that the field needs a more systematic understanding of confounds to build and test robust theories, and to extract more value out of the enormous amount of observational data we collect. To address this gap, we turned to players themselves and asked the research question: _What factors independently influence both gaming and wellbeing in the eyes of video game players?_
 
 Using responses to a free-text survey question originally collected by #citet(<BallouEtAl2024Registered>), we conducted a theoretical thematic analysis aimed at identifying confounding factors that could either bias a true effect of playtime on wellbeing, or create a spurious relationship where one does not exist. 
 
@@ -106,7 +121,7 @@ The data, coding tree, and other materials for this study are available on the O
 
 The data derive from #citet(<BallouEtAl2024Registered>), openly available at #link("https://osf.io/edtwn"). In that study, 414 adult Xbox players from the US and UK completed 6 biweekly surveys between February and May 2023, and provided access to their Xbox play history. 
 
-In addition to various questions about motivation and wellbeing, each biweekly survey had an open response question asking about events that participants thought may have affected both their gaming and their wellbeing. Specifically, participants were asked: "Have there been any major events impacting both your well-being and your gaming behavior in the last 2 weeks? If so, please briefly describe how you think your well-being and gaming changed as a result."
+In addition to various questions about motivation and wellbeing, each biweekly survey had an open response question asking about events that participants thought may have affected both their gaming and their wellbeing. Specifically, participants were asked: "Have there been any major events impacting both your well-being and your gaming behavior in the last 2 weeks? If so, please briefly describe how you think your well-being and gaming changed as a result." // By virtue of specifying a recent time period, this question prompts _time-varying_ confounds (as opposed to a trait-level question such as "What aspects of your personality, upbringing, or typical environment do you think impact both your well-being and your gaming behavior?").
 
 In total, there were 1318 responses the open response question during the 6 waves of the survey, provided 393 unique participants. We automatically filtered out 331 of these that consisted of short responses such as "no", "N/A", and "nothing". This left a total of 987 responses to be coded, which totalled 26,000 words.
 
@@ -118,7 +133,7 @@ Participants were on average 31.8 years old, and played 2.1 hours of video games
 
 To analyze the data, we conducted a theoretical thematic analysis @BraunClarke2006Using. In this version of thematic analysis, researchers begin with an existing theoretical framing---here, causal confounds that cause changes in both wellbeing and amount of gaming. We thus first generated a set of protocol codes matching the research question: 
 
--  #greenUp wellbeing, #greenUp playtime (factors that cause people to feel better and play more)
+- #greenUp wellbeing, #greenUp playtime (factors that cause people to feel better and play more)
 - #redDown wellbeing, #greenUp playtime (factors that cause people to feel worse and play more)
 - #greenUp wellbeing, #redDown playtime (factors that cause people to feel better and play less)
 - #redDown wellbeing, #redDown playtime (factors that cause people to feel worse and play less)
@@ -140,9 +155,9 @@ In total, we constructed #highlight[X] themes. In the interest of focusing the p
 #figure(
   placement: auto,
   scope: "parent",
-  image("confounds.png", width: 80%),
+  image("figures/confounds_overview.png", width: 80%),
   caption: [
-    Conceptual map of the confounds (orange) reported by participants and their effects on playtime and wellbeing. The effects of certain confounding factors are moderated by yet further factors, indicated in blue. 
+    Categories of confounds (orange) reported by participants to affect both playtime and wellbeing.
   ],
 ) <fig-confounds>
 
@@ -174,6 +189,52 @@ In total, we constructed #highlight[X] themes. In the interest of focusing the p
 ) <tab-confounds>
 
 // == Confounds creating the appearance of a positive relationship
+
+#figure(
+  placement: auto,
+  scope: "parent",
+  image("figures/household.png", width: 80%),
+  caption: [
+    Categories of confounds (orange) reported by participants to affect both playtime and wellbeing.
+  ],
+) <fig-household>
+
+#figure(
+  placement: auto,
+  scope: "parent",
+  image("figures/other_leisure.png", width: 80%),
+  caption: [
+    Categories of confounds (orange) reported by participants to affect both playtime and wellbeing.
+  ],
+) <fig-leisure>
+
+#figure(
+  placement: auto,
+  scope: "parent",
+  image("figures/physical_health.png", width: 80%),
+  caption: [
+    Categories of confounds (orange) reported by participants to affect both playtime and wellbeing.
+  ],
+) <fig-health>
+
+#figure(
+  placement: auto,
+  scope: "parent",
+  image("figures/social_relationships.png", width: 80%),
+  caption: [
+    Categories of confounds (orange) reported by participants to affect both playtime and wellbeing.
+  ],
+) <fig-social>
+
+#figure(
+  placement: auto,
+  scope: "parent",
+  image("figures/work.png", width: 80%),
+  caption: [
+    Categories of confounds (orange) reported by participants to affect both playtime and wellbeing.
+  ],
+) <fig-work>
+
 
 == Confounds causing lower wellbeing and less gaming (#redDown Wellbeing, #redDown Playtime)
 
