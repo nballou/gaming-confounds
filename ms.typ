@@ -1,8 +1,6 @@
 // #import "@preview/elsearticle:0.4.0": *
 // #import "@preview/wordometer:0.1.4": word-count, total-words
 
-// 
-
 // #show: elsearticle.with(
 // title: "Ill Health and Grief Fuel Gaming, while Lethargy Slows It: Playtime--Wellbeing Confounds from Players' Perspectives",
 // authors: (
@@ -13,7 +11,11 @@
 //   id: "a",
 //   ),
 //   (
-//   name: "Team",
+//   name: "Tamás Földes",
+//   id: "a"
+//   ),
+//   (
+//   name: "Thomas Hakman",
 //   id: "a"
 //   ),
 //   (
@@ -21,7 +23,7 @@
 //   id: "a"
 //   ),
 // ),
-// abstract: "Evidence suggests that total time spent playing video games (playtime) is not strongly correlated with wellbeing. However, observational studies rarely capture the many “third variables” that may influence both gaming and wellbeing and therefore confound this relationship. In this theoretical thematic analysis of 987 free-text responses from 393 adult players, we document 18 varied factors that participants themselves believe shape both their gaming and wellbeing, grouped into five broad categories---physical health, household responsibilities, work/school pressures, social relationships, and other leisure. Some factors (e.g., stress, grief) led to increased gaming and lower wellbeing, whereas others (e.g., intensified caretaking duties) reduced both gaming and wellbeing. Several themes showed moderated effects, with a single factor sometimes producing opposite impacts (e.g., mild illness increasing gaming as a distraction, but severe illness reducing it). These findings underscore the complexity of gaming's causal relationship with wellbeing. Neglecting confounders risks masking true effects or creating spurious associations, undermining interpretability. We offer specific measurement recommendations for future research, guiding more comprehensive covariate inclusion to better isolate gaming's potential causal effects.",
+// abstract: "Time spent playing video games (playtime) is not strongly correlated with wellbeing. However, quantitative studies rarely capture the many “third variables” that may influence both gaming and wellbeing and therefore confound this relationship---risking masked true effects or spurious associations. In this theoretical thematic analysis of 987 free-text responses from 393 adult players, we document 17 varied factors that participants themselves believe shape both their gaming and wellbeing, mapped to five categories: physical health, household responsibilities, work/school pressures, social relationships, and other leisure. Some factors like stress and grief led to increased gaming and lower wellbeing, whereas others (such as intensified caretaking duties) reduced both gaming and wellbeing. Factors were sometimes perceived as having contradictory or moderated impacts (e.g., mild illness increasing gaming as a distraction, but severe illness reducing it). We offer specific measurement recommendations, guiding comprehensive covariate inclusion to better isolate gaming's complex causal effects.",
 // journal: "PsyArXiv",
 // keywords: ("video games", "wellbeing", "stress", "thematic analysis", "confounds"),
 // format: "3p",
@@ -38,9 +40,9 @@
 // #import "../src/apa7ish.typ": *
 
 #show: conf.with(
-  title: "Ill Health and Grief Fuel Gaming, while Lethargy Slows It: Playtime--Wellbeing Confounds from Players' Perspectives",
+  title: "Ill Health and Grief Fuel Gaming, while Lethargy Slows It: Playtime–Wellbeing Confounds from the Player Perspective",
   // documenttype: "Research Article",
-  anonymous: true,
+  anonymous: false,
   authors: (
     (name: "Nick Ballou",
       email: "nick@nickballou.com",
@@ -48,22 +50,30 @@
       // postal: "Department of Communication, University of Pennsylvania, Philadelphia, PA 19104",
       orcid: "0000-0003-4126-0696",
       corresponding: true),
-    (name: "Team",
+    (name: "Tamás Földes",
       affiliation: "Oxford Internet Institute, University of Oxford",
-      orcid: "0000-1111-1111-1111"),
+      orcid: "0000-0002-0623-9149"),
+    (name: "Thomas Hakman",
+      affiliation: "Oxford Internet Institute, University of Oxford",
+      orcid: "0009-0009-8292-2482"),
     (name: "Andrew K Przybylski",
       affiliation: "Oxford Internet Institute, University of Oxford",
       orcid: "0000-0001-5547-2185")
   ),
-  abstract: [Evidence suggests that total time spent playing video games (playtime) is not strongly correlated with wellbeing. However, observational studies rarely capture the many “third variables” that may influence both gaming and wellbeing and therefore confound this relationship. In this theoretical thematic analysis of 987 free-text responses from 393 adult players, we document 18 varied factors that participants themselves believe shape both their gaming and wellbeing, grouped into five broad categories---physical health, household responsibilities, work/school pressures, social relationships, and other leisure. Some factors (e.g., stress, grief) led to increased gaming and lower wellbeing, whereas others (e.g., intensified caretaking duties) reduced both gaming and wellbeing. Several themes showed moderated effects, with a single factor sometimes producing opposite impacts (e.g., mild illness increasing gaming as a distraction, but severe illness reducing it). These findings underscore the complexity of gaming's causal relationship with wellbeing. Neglecting confounders risks masking true effects or creating spurious associations, undermining interpretability. We offer specific measurement recommendations for future research, guiding more comprehensive covariate inclusion to better isolate gaming's potential causal effects.
+  abstract: [Time spent playing video games (playtime) is not strongly correlated with wellbeing. However, quantitative studies rarely capture the many “third variables” that may influence both gaming and wellbeing and therefore confound this relationship---risking masked true effects or spurious associations. In this theoretical thematic analysis of 987 free-text responses from 393 adult players, we document 17 varied factors that participants themselves believe shape both their gaming and wellbeing, mapped to five categories: physical health, household responsibilities, work/school pressures, social relationships, and other leisure. Some factors like stress and grief led to increased gaming and lower wellbeing, whereas others (such as intensified caretaking duties) reduced both gaming and wellbeing. Factors were sometimes perceived as having contradictory or moderated impacts (e.g., mild illness increasing gaming as a distraction, but severe illness reducing it). We offer specific measurement recommendations, guiding comprehensive covariate inclusion to better isolate gaming's complex causal effects. 
+
+  #linebreak()
+  Word count: #total-words
+  #linebreak()
 ],
-  date: "Feb 1, 2025",
+  date: "Mar 24, 2025",
   keywords: [video games, wellbeing, stress, thematic analysis, confounds],
-  funding: [This research was supported by the UK Economic and Social Research Council (ESRC) (ES/W012626/1).]
+  funding: [#linebreak() *Funding*: This research was supported by the UK Economic and Social Research Council (ESRC) (ES/W012626/1). #linebreak()],
+  disclosure: [#linebreak() *Data availability*: Data and materials for this study are available on the OSF: #link("https://osf.io/ck9bm"). #linebreak() #linebreak() *Contributions (CRediT; https://credit.niso.org/)*: NB: conceptualization, methodology, formal analysis, visualization, and writing – original draft. TF: validation, and writing – review & editing. TH: validation, and writing – review & editing. AKP: conceptualization, funding acquisition, project administration, and writing – review & editing #linebreak() #linebreak() *Conflicts of Interest*: The authors declare no competing interests. #linebreak() #linebreak() *Ethics*: This study uses secondary data. Ethical approval for the original study was granted by Queen Mary University of London (QMERC20.383).],
 )
 
 ////////////////////////
-/// Generally functions
+/// General functions
 //////////////////////
 
 #set quote(block: true)
@@ -104,24 +114,15 @@
   cite(label, form: "normal") 
 }
 
-Word count: #total-words
-
 = Introduction
 
-A series of recent studies has found no meaningful relationship between the amount of time people spend playing video games (playtime) and their wellbeing or mental health @BallouEtAl2024Registered @VuorreEtAl2022Time @LarrieuEtAl2023How. However, while these studies have strengthened the case that raw playtime is unlikely to affect wellbeing for most players---and pushed the conversation towards specific qualitative aspects of play such as a game's social affordances @CrenshawNardi2016It, time of day when play occurs @DrummondSauer2020Timesplitters, and player motivation @BruhlmannEtAl2020Motivational\-\-\-they have yet to conclusively rule out the possibility that playtime does causally affect people, at least some of the time. A causal understanding of games and wellbeing remains a vital prerequisite for informing evidence-based policy, behavioral management strategies and interventions, and design guidelines for the games industry.
+A series of recent studies has found no meaningful relationship between the amount of time people spend playing video games (playtime) and their wellbeing or mental health @BallouEtAl2024Registered @VuorreEtAl2022Time @LarrieuEtAl2023How. However, while these studies strengthened the case that playtime on its own is unlikely to affect wellbeing for most players---and pushed the conversation towards qualitative descriptors of play such as a game's social affordances @CrenshawNardi2016It, time of day when play occurs @DrummondSauer2020Timesplitters, game aspects (e.g., challenge or narrative; #npc(<MirhadiEtAl2024Playing>)), and player motivation @BruhlmannEtAl2020Motivational—they have yet to conclusively rule out the possibility that playtime does causally affect people, at least some of the time. A causal understanding of games and wellbeing remains a vital prerequisite for informing evidence-based policy, behavioral management strategies and interventions, and design guidelines for the games industry.
 
 Our continued uncertainty is, in large part, a reflection of the inherent challenge of making causal inferences from observational data. It remains difficult and rare for researchers to directly intervene on gaming behavior in a naturalistic setting (although see e.g., #npc(<EvansEtAl2018Effect>) and #npc(<BrailovskaiaEtAl2022twoweek>) for counter-examples)---even in a sister field such as violent video games and aggression where experiments are easier to conduct, they make up just 19% of studies @Ferguson2015angry. This means that our understanding of how games affect wellbeing comes largely from qualitative studies and observational designs where people are surveyed about their gaming and wellbeing. 
 
-To estimate causal effects from observational data, whether cross-sectional or longitudinal, researchers need an understanding of the data-generating process @LohRen2023Unfulfilled. In any complex psychological topic such as how playing games interacts with wellbeing, the data-generating process is likely to be exceptionally complicated @BallouEtAl2024How, rife with mediators, effect size modification (moderation), colliders, and---perhaps most frequently discussed---confounders. Confounds are factors that influence both gaming and wellbeing. If unaccounted for, confounders can both create spurious correlations or bias true effects towards zero @Rohrer2018thinking. 
+To estimate causal effects from observational data, whether cross-sectional or longitudinal, researchers need an understanding of the data-generating process @LohRen2023Unfulfilled. In any complex psychological topic such as how playing games interacts with wellbeing, the data-generating process is likely to be exceptionally complicated @BallouEtAl2024How, rife with mediators, effect size modification (moderation), colliders, and---perhaps most frequently discussed---confounders. Confounds are factors that influence both gaming and wellbeing. If unaccounted for, confounders can both create spurious correlations or bias true effects towards zero @Rohrer2018thinking.  
 
-At present, the literature does not provide a systematic or comprehensive list of potential confounding factors in the relationship between gaming playtime and wellbeing. While studies commonly adjust for factors such as age, gender, employment, and education (e.g., #npc(<BallouEtAl2024Perceived>) #npc(<JohnsonEtAl2016Motivationsa>) #npc(<SauterEtAl2020Social>)), we argue that this does not go far enough: Many more factors beyond this short list of stable demographic characteristics influence the relationship between gaming engagement and wellbeing. To date, researchers have lacked the necessary information to identify, measure, and adjust for these additional confounds. Without closer attention to confounding, observational studies---which comprises the vast majority of work on this topic---will continue to have extremely limited value for shedding light on cause and effect. 
-
-We believe players themselves are an invaluable source of qualitative information about how gaming and wellbeing unfold in their own lives. We therefore turned to them to help address the field's need for better information about confounding, and conducted a theoretical thematic analysis of player-reported confounds (n = 393 players across 6 biweekly surveys, 987 open-response text entries). Our results make several contributions: 
-
-1. We present the most comprehensive list to date of variables that may need to be included in a statistical model to produce unbiased estimates of the effect of gaming on wellbeing, grouped into five categories: physical health, household, work and school, social, and other leisure
-  - For the most prevalent of potential confounds, we offer concerete suggestions for measurement tools that researchers could use to capture and adjust for these (@tab-confounds)
-2. We identify both positive and negative confounds, which may therefore bias effects in either direction: some confounds bias observed relationships positively by causing an increase or decrease in both playtime and wellbeing, while others would bias it negatively by causing an increase in one and a decrease in the other
-3. We demonstrate that several confounds have _moderated_ effects on gaming, highlighting the need for more rigorous theory-building---for example, illness tends to decrease wellbeing and reduce gaming if associated with tiredness and difficulty focusing, whereas it tends to increase gaming if tiredness is not a primary symptom 
+At present, the literature lacks explicit causal models of gaming playtime and wellbeing and thereby the information necessary to identify, measurere, and adjust for the factors that confound this relationship. While studies commonly adjust for factors such as age, gender, employment, and education known to affect both gaming and wellbeing (e.g., #npc(<BallouEtAl2024Perceived>) #npc(<JohnsonEtAl2016Motivationsa>) #npc(<SauterEtAl2020Social>)), understanding play and its possible effects requires appreciating a larger causal context.  many more factors beyond this short list of stable demographic characteristics influence the relationship between gaming engagement and wellbeing. Without closer attention to confounding, observational studies---which comprises the vast majority of work on this topic---continue to risk both over- and underadjustment bias, yielding results unlikely to meaningfully advance our understanding of play and player wellbeing. 
 
 By systematically identifying player-reported confounds, we provide a valuable starting point for researchers deciding which covariates they need to measure and include in their statistical models, and what factors might need to be included in current or future theoretical models of gaming and wellbeing. 
 
@@ -136,36 +137,43 @@ By systematically identifying player-reported confounds, we provide a valuable s
   ],
 ) <fig-toy>
 
-The ultimate goal of many social scientific endeavors is to understand cause and effect @Eronen2020Causal\-\-\-we often want to be able to predict in advance how a given change will affect people, or to intervene on individuals or systems to improve wellbeing outcomes. In the case of gaming research, this includes broad goals such as establishing parenting strategies (based on e.g., hypothetical evidence that limiting play sessions to no more than X minutes will cause improved wellbeing), policy changes (based on e.g., hypothetical evidence that restricting total play to no more than Y hours will, on average, reduce problem gaming), or design guidelines (based on e.g., hypothetical evidence that including design feature Z will, on average, cause more toxicity between players). To establish cause and effect, we apply causal inference methods. (An introduction to causal inference is well beyond the scope of this article, but we refer readers to #npc(<Rohrer2018thinking>), #npc(<Dablander2020introduction>), and #npc(<MagnussonEtAl2024Harmful>) as a starting point).
+The ultimate goal of many social scientific endeavors is to understand cause and effect @Eronen2020Causal—we often want to predict in advance how a given change will affect people, or to intervene on individuals or systems to improve outcomes. In games research, such goals include establishing parenting strategies (based on e.g., hypothetical evidence that limiting a child's gaming no more than X minutes per session will cause improved wellbeing), policy changes (based on e.g., hypothetical evidence that restricting total play to no more than Y hours will, on average, reduce problem gaming), or design guidelines (based on e.g., hypothetical evidence that including design feature Z will, on average, cause more toxicity between players). To establish cause and effect, we apply causal inference methods (an introduction to causal inference is well beyond the scope of this article, but we refer readers to #npc(<Rohrer2018thinking>), #npc(<Dablander2020introduction>), and #npc(<MagnussonEtAl2024Harmful>) as starting points.)
 
-One of the fundamental concepts in causal inference is _confounding_---the focus of this article. Confounding occurs when a third variable jointly causes both the predictor and outcome of interest @Rohrer2018thinking. A commonly used example of confounding is the observation that ice cream sales are correlated with rates of drowning (@fig-toy, top left). However, it is neither the case that a delicious ice cream makes people worse swimmers (ice cream $arrow.r$ drowning), nor that people's last wish when drowning is a scoop of Cherry Garcia (drowning $arrow.r$ ice cream). Instead, it's a third factor---summertime (or perhaps temperature)---that causes both ice cream sales and rates of drowning to increase, creating a spurious correlation and a timely reminder of the adage "correlation does not imply causation" (@fig-toy, top right).
+One of the fundamental building blocks for realizing causal inference is _confounding_---the focus of this article. Confounding occurs when a third variable jointly causes both the predictor and outcome of interest @Rohrer2018thinking. A commonly used example of confounding is the observation that ice cream sales are correlated with rates of drowning (@fig-toy, top left). However, it is neither the case that a delicious ice cream makes people worse swimmers (ice cream $arrow.r$ drowning), nor that people's last wish when drowning is a scoop of Cherry Garcia (drowning $arrow.r$ ice cream). Instead, a third factor---summertime (or perhaps related variables such as school holiday or temperature)---causes both ice cream sales and rates of drowning to increase, creating a spurious correlation and a timely reminder of the adage "correlation does not imply causation" (@fig-toy, top right).
 
 Perhaps less discussed is the adage's negation, which is equally true: _the absence of correlation does not imply the absence of causation_. Confounding is often used to explain spurious relationships, but can also suppress a true effect. Imagine there is a true causal effect of coffee consumption on productivity (there certainly is for the lead author); yet, in a correlational study, we find no difference in productivity between coffee drinkers and non-coffee drinkers (@fig-toy, bottom left). This can be explained by an unmeasured confounder: sleep quality. People who slept poorly are more likely to drink coffee, but poor sleep also decreases productivity. The negative effect of poor sleep cancels out the positive effect of coffee, biasing the true effect towards zero (@fig-toy, bottom right).
 
-The importance of confounding is broadly understood in behavioral research, and indeed in studies of digital media @ElsonEtAl2015Comparing @EtchellsEtAl2016Prospective @Ballou2023Manifesto. Controlling for potential confounders with the aim of estimating causal effects from observational data is common practice across the discipline: researchers regularly include covariates such as age, gender, and socio-economic status in statistical models with the aim of reducing or eliminating confounding (e.g., #npc(<JohnsonEtAl2016Motivationsa>) #npc(<SauterEtAl2020Social>)). Adjusting for such stable demographic factors is generally a sound practice with the potential to reduce bias and improve precision, among other benefits @GelmanEtAl2020Regression.
+The importance of confounding is broadly understood in behavioral research, and indeed in studies of digital media @ElsonEtAl2015Comparing @EtchellsEtAl2016Prospective @Ballou2023Manifesto. Controlling for potential confounders with the aim of estimating causal effects from observational data is common practice across the discipline: researchers regularly include covariates such as age, gender, and education attainment in statistical models with the aim of reducing or eliminating confounding (e.g., #npc(<JohnsonEtAl2016Motivationsa>) #npc(<SauterEtAl2020Social>)). Adjusting for such stable demographic factors is generally a sound practice with the potential to reduce bias and improve precision, among other benefits @GelmanEtAl2020Regression.
 
-However, demographic characteristics such as age and gender represent just the tip of the confound iceberg. Many more factors have the potential to independently influence both psychological predictors (here, video game playtime) and outcomes (here, wellbeing). These range from trait-level personality characteristics (e.g., extraversion), to neurodivergence (e.g., ADHD), to developmental factors (e.g., adverse childhood expriences), to so-called time-varying confounds such as job-related stress, injuries or health conditions, and much more @GrajewskiDragan2020Adverse @LeeChen2023Seeking. 
+However, demographic characteristics such as age and gender represent just one way of studying confounds. Many more factors have the potential to independently influence both psychological predictors (like video game playtime) and outcomes (like wellbeing). These range from trait-level personality characteristics (e.g., extraversion), to neurodivergence (e.g., ADHD), to developmental factors (such as adverse childhood experiences), to so-called time-varying confounds such as job-related stress, injuries or health conditions, and much more @GrajewskiDragan2020Adverse @LeeChen2023Seeking. 
 
 Very little research has sought to systematically identify what potential confounds  materially impact the relationship between gaming and wellbeing. The field's narrow attention to stable demographic factors as the primary source of confounding at the expense of other health, psychology, and social factors places severe constraints on statistical modelling and, by extension, theory development.
 
 From a modelling standpoint, a lack of guidance about which confounds are relevant forces researchers to make ad hoc decisions about what covariates to include in their statistical models. In addition to producing biased estimates, this increases opportunities for p-hacking via selective and atheoretical inclusion or exclusion of potential confounds @SimmonsEtAl2011falsepositive.
 
-From a theoretical standpoint, neglecting potential confounders means that a given test of the theory can be easily explained away---results that are incompatible with the theory may be true contradictions, or simply statistical relics produced by incomplete adjustment for confounding. Ultimately, this leaves open numerous questions about the mechanisms and temporal dynamics underlying the gaming-wellbeing relationship unclear @PrestwichEtAl2015Using. By systematically accounting for confounders as part of the theory development process, researchers can develop richer models, clarify boundary conditions, and produce more nuanced explanations of the interplay between gaming and wellbeing @VanderWeele2019Principles.
-
+From a theoretical standpoint, neglecting potential confounders means that a given test can be easily explained away---results that are incompatible with the theory may represent true contradictions, or simply statistical relics produced by incomplete adjustment for confounding. Ultimately, this leaves open numerous questions about the mechanisms and temporal dynamics underlying the gaming-wellbeing relationship  @PrestwichEtAl2015Using. 
 
 == Present Research
 
-It is clear that the field needs a more systematic understanding of confounds to build and test robust theories, and to extract more value out of the enormous amount of observational data we collect. To address this gap, we turned to players themselves and asked the research question: _What factors independently influence both gaming and wellbeing in the eyes of video game players?_
+By systematically accounting for confounders as part of the theory development process, researchers can develop richer models, clarify boundary conditions, and extract more value from the enormous amount of observational data we collect @VanderWeele2019Principles. 
 
-Using responses to a free-text survey question originally collected by #citet(<BallouEtAl2024Registered>), we conducted a theoretical thematic analysis aimed at identifying confounding factors that could either bias a true effect of playtime on wellbeing, or create a spurious relationship where one does not exist. 
+We believe players themselves are an invaluable source of qualitative information about how gaming and wellbeing unfold in their own lives. Qualitative studies of player-reported data have been key in advancing theory both in the field of games and mental health (e.g., #npc(<BallouDeterding2023Just>), #npc(<SnodgrassEtAl2024Causal>)) and in psychology more broadly (e.g., #npc(<GlaserLaudel2019Discovery>)). We therefore turned to them to help address the field's need for better information about confounding, posing the research question: _What factors independently influence both gaming and wellbeing in the eyes of video game players? _and conducted a theoretical thematic analysis. 
+
+We conducted a theoretical thematic analysis of player-reported confounds originally collected by #citet(<BallouEtAl2024Registered>) (n = 393 players across 6 biweekly surveys, 987 open-response text entries). We aimed to identify confounding factors that might bias a true effect of playtime on wellbeing or create a spurious relationship where one does not exist. Our approach is valuable because: 
+
+1. We present the most comprehensive list to date of variables that may need to be included in a statistical model to produce unbiased estimates of the effect of gaming on wellbeing, grouped into five categories: physical health, household, work and school, social, and other leisure
+  - For the most prevalent of potential confounds, we offer concrete suggestions for measurement tools that researchers could use to capture and adjust for these (@tab-confounds)
+2. We identified both positive and negative confounds, which may therefore bias effects in either direction: some confounds bias observed relationships positively by causing an increase or decrease in both playtime and wellbeing, while others would bias it negatively by causing an increase in one and a decrease in the other
+3. We demonstrate that several confounds have _moderated_ effects on gaming, highlighting the need for more rigorous theory-building---for example, illness tends to decrease wellbeing and reduce gaming if associated with tiredness and difficulty focusing, whereas it tends to increase gaming if tiredness is not a primary symptom 
+
 
 = Method
 
 == Data and Materials
 
-The data, coding tree, and other materials for this study are available on the OSF (https://osf.io/ck9bm).
+Data and materials for this study are available on the OSF (https://osf.io/ck9bm).
 
-The data derive from #citet(<BallouEtAl2024Registered>), openly available at #link("https://osf.io/edtwn"). In that study, 414 adult Xbox players from the US and UK completed 6 biweekly surveys between February and May 2023, and provided access to their Xbox play history. 
+The data derive from #citet(<BallouEtAl2024Registered>), openly available at #link("https://osf.io/edtwn"). In that study, 414 adult Xbox players from the US and UK completed 6 biweekly surveys between February and May 2023, and provided access to their Xbox play history. Ethical approval for the original study was granted by Queen Mary University of London (QMERC20.383).
 
 In addition to various questions about motivation and wellbeing, each biweekly survey had an open response question asking about confounds: "Have there been any major events impacting both your wellbeing and your gaming behavior in the last 2 weeks? If so, please briefly describe how you think your well-being and gaming changed as a result." // By virtue of specifying a recent time period, this question prompts _time-varying_ confounds (as opposed to a trait-level question such as "What aspects of your personality, upbringing, or typical environment do you think impact both your well-being and your gaming behavior?").
 
@@ -192,7 +200,7 @@ We subsequently completed 3 coding cycles:
 
 The lead author (NB) completed all three coding cycles with all responses. Two analysts supported the analysis process. First, TH completed Cycles 1 and 2 with a subset (20%) of the data. The two coders then met to discuss the patterns each noticed in the data, which helped ensure that the deductive codes were consistently applied, and led to the introduction of new inductive themes. After completing another coding cycle with the revised coding tree, TF reviewed the coding tree alongside coded segments, to ensure that codes accurately reflected the coded segments from which they were derived, and that the coding tree as a whole was coherent and communicable. 
 
-We adopt a constructivist perspective, believing that the analysis is inherently a product of the analyst's background in the topic, disciplinary knowledge, and perspective. Given this, we do not calculate measures such as interrater reliability; instead, the role of additional analysts is to assess and challenge the analysis and ensure that it is both coherent and well-grounded in the data. 
+We adopt a critical realist perspective, believing that the qualitative analysis is capable of generating causal knowledge, but only through the subjective lens of the analyst given their background, disciplinary knowledge, and perspective @Fryer2022critical. Given this, we do not calculate measures such as interrater reliability; instead, the role of additional analysts is to promote reflexivity by assessing and challenging the analysis, helping ensure that it is both coherent and well-grounded in the data. 
 
 #figure(
   placement: top,
@@ -205,7 +213,7 @@ We adopt a constructivist perspective, believing that the analysis is inherently
 
 = Results
 
-In total, we constructed 18 themes, grouped into 5 _categories_ (overviewed in @fig-confounds): physical health, household and caretaking, work and school, social relationships, and other leisure availability. Each of these categories contains several _themes_---i.e., player-identified confounds affecting both playtime and wellbeing. 
+In total, we constructed 17 themes, grouped into 5 _categories_ (overviewed in @fig-confounds): physical health, household and caretaking, work and school, social relationships, and other leisure availability. Each of these categories contains several _themes_---i.e., player-identified confounds affecting both playtime and wellbeing. Themes derived from 428 individual coded segments. 
 
 In accordance with our protocol codes, we specify---to the best of our ability---the direction of effects within each theme. For example, some factors cause an increase in wellbeing and playtime (a positive confound possibly creating a spurious effect), whereas others cause an increase in playtime and a decrease in wellbeing (a negative confound possibly obscuring a true effect). In a handful of cases, themes were moderated by unknown factors---different players reported the same factor having opposite effects for them. Such cases are highlighted with purple +/- symbols. 
 
@@ -222,7 +230,7 @@ In accordance with our protocol codes, we specify---to the best of our ability--
 
 === Conditions causing tiredness or loss of focus (#redDown Playtime, #redDown Wellbeing)
 
-The most common factors that caused both lower wellbeing and less gaming related to physical health. People reported a variety of conditions, such as respiratory illnesses (commonly, Covid-19), gastrointestinal problems, or recovery from surgeries, that led them to feel worse and spend less time playing games: 
+The most common factors that caused both lower wellbeing and less gaming related to physical health. People reported a variety of conditions, such as respiratory illnesses (commonly, Covid-19), gastrointestinal problems, or recovery from surgeries: 
 
 #quote[
   Had food poisoning recently. That sh\*\* sucked so bad. Sent me into bad depression for a few days and I couldn't bring myself to play anything. _(P2283366, trans woman, 19)_
@@ -232,7 +240,7 @@ The most common factors that caused both lower wellbeing and less gaming related
   I've been really sick the last couple of days and haven't felt like playing much. _(P8748814, man, 21)_
 ]
 
-However, it was not the case that all ill health conditions led to decreased gaming. Rather, the crux of this theme was descriptions of physical health problems causing tiredness and thereby limiting their motivation or capacity ot play. People whose illness led to substantial fatigue often cited this as a reason that they felt unable to play games, focusing instead on resting or other activities perceived to be less strenuous:
+However, not all ill health conditions led to decreased gaming. Rather, the crux of this theme was descriptions of physical health problems causing tiredness and thereby limiting their motivation or capacity to play. People whose illness led to substantial fatigue often cited this as a reason that they felt unable to play games, focusing instead on resting or other activities perceived to be less strenuous:
 
 #quote[
   Fibro flare up continues, but starting to get a little better. Pain, fatigue and dizziness make it hard to focus, or muster up energy to play. _(P1859844, woman, 34)_
@@ -301,7 +309,7 @@ The broader pattern in these examples is an increase in either free time or the 
 
 === Loss-related grief (?? Playtime, #redDown Wellbeing)
 
-Participants commonly cited the loss of a loved one as a factor impacting both playtime and wellbeing. While loss events were always negative for wellbeing, participants reported that they sometimes caused increased gaming, and sometimes decreased gaming. For example, some players describe turning to games as a primary means of coping with the grief or stress: 
+Participants commonly cited the loss of a loved one as a factor impacting both playtime and wellbeing. While loss events were always negative for wellbeing, they sometimes caused increased and sometimes decreased gaming. For example, some players described turning to games as a primary means of coping with the grief or stress: 
 
 #quote[
   A family member passed away so to avoid being depressed I've been sleeping all day and gaming all night, I've nearly lost relationships due to this because its the one thing that takes my mind off every thing. _(P2249194, man, 22)_
@@ -311,20 +319,20 @@ Participants commonly cited the loss of a loved one as a factor impacting both p
   My mother had a stroke 4 weeks ago and fractured her skull. \[...\] I've been trying to game way more to help escape the feelings and emotions I have. Helps me forget and takes away the worrying. _(P5616255, man, 24)_
 ]
 
-Others, however, describe how death or illness in the family limited their playtime, due to factors such as logistical responsibilities, being emotionally drained, or a change in priorities: 
+Others, however, described how death or illness in the family limited their playtime, due to factors such as logistical responsibilities, being emotionally drained, or a change in priorities: 
 
 #quote[
   My wife had a death in her family, which exasperated my depression and anxiety. This interfered with my sleep, which made it hard to concentrate sometimes when gaming. _(P2300863, man, 43)_
 
-  A funeral i had to travel for. It was an emotional time that obviously impacted and interrupted everything for a few days while I was gone _(P3372296, man, 23)_
+  A funeral I had to travel for. It was an emotional time that obviously impacted and interrupted everything for a few days while I was gone _(P3372296, man, 23)_
 
   We had a loss in the family recently and it has caused a bit of upset over the last couple of weeks so I haven't been playing my Xbox as much as I have had other priorities _(P5297240, man, 45)_
 ]
 
-One participant highlights the duality of these experiences, showing that the different gaming-related responses can occur within a single individual:
+One participant highlighted the duality of these experiences, showing that different gaming-related responses can occur within one individual:
 
 #quote[
-  I'm still battling a bit of depression after losing my mother three months ago. Somedays I really look forward to gaming and escaping realty and my real-world problems. Other days, I find gaming and the battle passes of the games I play a chore. _(P8244483, man, 36)_ 
+  I'm still battling a bit of depression after losing my mother three months ago. Somedays I really look forward to gaming and escaping realty \[sic\] and my real-world problems. Other days, I find gaming and the battle passes of the games I play a chore. _(P8244483, man, 36)_ 
 ]
 
 Grief can spur some people towards gaming, but so too can the emotional turbulence associated with loss make gaming less appealing or convenient.
@@ -353,9 +361,9 @@ In other cases, a person's friends or family experienced a negative event, causi
 
 When a person's social circle requires additional support, many people were quick to drop gaming as a way to make space to provide it. 
 
-=== Security and Maintainence (?? Playtime, #redDown Wellbeing)
+=== Security and Maintenance (?? Playtime, #redDown Wellbeing)
 
-Several participants reported incidents such as break-ins, car accidents, or court cases, which we label as security and maintence factors. Several instances described how participants turned to gaming for relief or escape after these incidents:
+Several participants reported incidents such as break-ins, car accidents, or court cases, which we label as security and maintenance factors. Several instances described how participants turned to gaming for relief or escape after these incidents:
 
 #quote[
   I was involved in a car accident that had me upset for a while but gaming helped me maintain contact with friends despite being relatively isolated as I had no method of travel during the last few weeks _(P4948310, man, 22)_
@@ -447,10 +455,16 @@ In other cases, however, work-related stressors did not necessarily impinge upon
 
 Gaming is viewed as a viable escape or distraction from unpleasant work environments---so long as the person has the availability to actually pursue it.
 
-=== Job Loss and Unemployment (?? Playtime, #redDown Wellbeing)
+=== Job Instability and Unemployment (?? Playtime, #redDown Wellbeing)
 
-Many participants described turning to games during periods of unemployment or job loss, a phenomenon documented in previous research @LeeChen2023Seeking. Among our participants, the effect of job loss wellbeing was understandably consistently negative, but its effect on gaming was varied. Some participants turned to gaming to deal with the negative feelings:
+Many participants described turning to games during periods of unemployment or job instability, a phenomenon documented in previous research @LeeChen2023Seeking. Among our participants, the effect of job instability wellbeing was understandably consistently negative, but its effect on gaming was varied. Some participants turned to gaming to deal with the negative feelings:
 
+#quote[
+
+  Finding out about a redundancy has caused me to play more games to distract myself _(P6334835, woman, 25)_
+
+  Waiting on response to job interview for better position, less commute time, and higher wages. Stressing me waiting with no responses, and started playing Diablo 3 to alleviate the stress. _(P6193017, man, 47)_
+]
 
 Whereas other participants had the opposite reaction, spending less time playing games, possibly in favor of investing time into their job search:
 
@@ -466,7 +480,7 @@ For the latter participant, the pattern might describe both a confounding effect
 
 === Self-improvement Goals (#redDown Playtime, #greenUp Wellbeing)
 
-A less common theme centers around waves of productivity, where partcipants described the feeling of being 'on a roll' at work or in a hobby perceived to have more value than gaming: 
+A less common theme centers around waves of productivity, where participants described the feeling of being 'on a roll' at work or in a hobby perceived to have more value than gaming: 
 
 #quote[
   Saw a future path opening up and felt valued. Gaming reduced. _(P4125077, man, 51)_
@@ -474,7 +488,7 @@ A less common theme centers around waves of productivity, where partcipants desc
   I also changed my college major \[...\] I am in a more confident, inspired, determined headspace but I have admittedly not had a lot of time to play games. Gaming is my number one hobby but I've chosen to prioritize my physical health (healing after donating), education, and giving my spare time to spend with my family. _(P6955202, woman, 33)_
 ]
 
-For many participants, gaming is an adaptible activity that can be replaced with other activites that are viewed as more productive or wellbeing-supportive, when the environment supports pursuing those instead of (or in addition to) gaming. 
+For many participants, gaming is an adaptable activity that can be replaced with other activities that are viewed as more productive or wellbeing-supportive, when the environment supports pursuing those instead of (or in addition to) gaming. 
 
 == Social relationships
 
@@ -489,22 +503,19 @@ For many participants, gaming is an adaptible activity that can be replaced with
 
 === Social Strain (?? Playtime, #redDown Wellbeing)
 
-#highlight("FINISH")
+One of the most common themes was that of social strain---participants describing how difficulties in their personal relationships were harmful for wellbeing but led to adaptations in their gaming. The relationships in questions were varied, including friends, family, partners, children, and the wider community, but at their core all shared a feeling of being disconnected from others, which impacted both their wellbeing and their gaming.
 
-One of the most common themes was that of social strain---participants describing how difficulties in their personal relationships were harmful for wellbeing but led to adaptations in their gaming. The relationships in questions were varied, including friends, family, partners, children, and the wider community, but at their core all shared a feeling of being disconnected from others, which impacting both their wellbeing and their gaming.
-
-For many participants, this led to lower engagement with games, as they lost the energy, focus, and motivation to play games: 
+For many participants, this led to lower engagement with games, as they lost the energy, focus, and motivation to play: 
 
 #quote[
   I've been through a lot of struggles with \[a recent break-up\]. It's made it hard to focus on games sometimes _(P2445414, woman, 29)_
 
   Difficult time in my relationship. Been feeling depressed and unable to engage much with gaming. _(P5032078, man, 40)_
 
-    One of my best friends betrayed me and cut me out of their life, and that has a very negative impact on my well-being and my gaming ability. _(P4823800, man, 20)_
+  One of my best friends betrayed me and cut me out of their life, and that has a very negative impact on my well-being and my gaming ability. _(P4823800, man, 20)_
 ]
 
-
-Other participants, however, reported the opposite: decreased wellbeing but increased gaming as they turned to media as a means of dealing with (or escaping from) the social stress:
+Other participants, however, reported the opposite: decreased wellbeing but increased gaming as they turned to media as a means of dealing with or escaping from social stress:
 
 #quote[
   Falling out with family members thus playing more games to distract and entertain _(P906583, man, 31)_
@@ -523,12 +534,12 @@ Like work and intensified caretaking, interpersonal challenges serve as another 
 Participants' engagement with games was not only affected by their own interest in gaming, but sometimes also by that of those around them. When friends or partners supported or co-participated in their interest in gaming, participants described a positive effect on both their wellbeing and their playtime:
 
 #quote[
-  Last week, me and my girlfriend started playing a co-op game called Unravel 2 \[...\] We had lots of fun through cooperation in that game, it was a lovely and different experiencde for both of us, we want to try more co-op games in the future.\[...\] I can conclude that this was a major event that positively impacted mine and my girlfriend's gaming behaviour and well being :) _(P7340644, woman, 34)_
+  Last week, me and my girlfriend started playing a co-op game called Unravel 2 \[...\] We had lots of fun through cooperation in that game, it was a lovely and different experience for both of us, we want to try more co-op games in the future.\[...\] this was a major event that positively impacted mine and my girlfriend's gaming behaviour and well being :) _(P7340644, woman, 34)_
 
   About 1 year ago I split up with my fiance and did not want to game at all during that time. Now I am with a new partner who also loves to game and have been playing every day _(P749516, woman, 31)_
 ]
 
-Individuals do not choose to play games (or not) in a vaccuum; certain social environments can make people feel more comfortable to express or engage in their interests, boosting both wellbeing and play. 
+Individuals do not choose to play games (or not) in a vacuum; certain social environments can make people feel more comfortable to express or engage in their interests, boosting both wellbeing and play. 
 
 == Other leisure availability
 
@@ -555,7 +566,7 @@ Often these trips had a social element that enhanced the wellbeing boost:
    I've been away with some long term friends who I hadn't seen in a long time, it meant less time gaming but made my very happy. _(P5302158, man, 36)_
 ]
  
-That travel would disrupt access to gaming equipment is logical---this may be especially the case for the participants of this particular study, who primarily play games on Xbox (as opposed to a portable system such as the Nintendo Switch). 
+That travel would disrupt access to gaming equipment is logical---especially for the participants of this particular study, who primarily play games on Xbox (as opposed to portable-by-default platforms such as smartphone and Nintendo Switch). 
 
 === Additional Leisure Time NOT Involving Travel (#greenUp Playtime, #greenUp Wellbeing)
 
@@ -571,11 +582,11 @@ In other cases, it was a new job with improved work-life balance that afforded t
   I stated a new job, which positively affected my well being it balanced out my work/life schedule and now have more time to do what I enjoy _(P1604123, man, 32)_
 ]
 
-This theme bears some relation to physical health conditions not causing tiredness or impairing ability to play---when participants were off of work (either due to planned holiday or injury) but at home, they tended to feel better and dedicate a portion of their additional leisure time to games. 
+This theme bears some relation to physical health conditions not causing tiredness or impairing ability to play---when participants were off from work (either due to planned holiday or injury) but at home, they tended to feel better and dedicate a portion of their additional leisure time to games. 
 
 === Restrictions on Alternative Activities (#greenUp Playtime, #redDown Wellbeing)
 
-Several participants describe how logistical restrictions on their ability to pursue other forms of leisure. Examples such as weather, financial constraints that prevented them from participating in activities outside the home, and movement restrictions meant that the field of available leisure options, increasing gaming but impinging on wellbeing:
+Several participants describe logistical restrictions on the pursuit of other forms of leisure. Examples such as weather, financial constraints that prevented them from participating in activities outside the home, and movement restrictions meant that the field of available leisure options, increasing gaming but impinging on wellbeing:
 
 #quote[
   Poor weather on my days off meant I haven't taken the kids out anywhere and been on the Xbox and PC a little more. _(P131120, man, 37)_
@@ -610,7 +621,7 @@ For parsimony, we include these two patterns as part of the same theme, as the e
       table.cell(rowspan: 3, [Physical Health]),
         [Conditions causing tiredness or loss of focus], 
           [#redDown Playtime #linebreak() #redDown Wellbeing], 
-          [Short Fatique Questionnaire @PensonEtAl2020Short],
+          [Short Fatigue Questionnaire @PensonEtAl2020Short],
         [Conditions impairing ability to play], 
           [#redDown Playtime #linebreak() #redDown Wellbeing], 
           [Disability of the arm, shoulder and hand questionnaire (QuickDASH) @BeatonEtAl2005Development],
@@ -644,41 +655,38 @@ For parsimony, we include these two patterns as part of the same theme, as the e
   )
 ) <tab-confounds>
 
-VIdeo game players readily recognize and identify a wide range of factors that independently influence both their gaming and their wellbeing. While many of these facotrs have been discussed in previous work, their theoretical status as potential confounds that---if unaccounted for---would bias the results of numerous studies that have related wellbeing and playtime @LarrieuEtAl2023How @BallouEtAl2024Registered @VuorreEtAl2022Time @PallaviciniEtAl2022Effects.
+Video game players readily recognize and identify a wide range of factors that independently influence both their gaming and their wellbeing @HelsbyEtAl2023bandwidth @IacovidesMekler2019role. While many of these factors have been discussed in previous work, their theoretical status as potential confounds that---if unaccounted for---would bias the results of numerous studies that have related wellbeing and playtime @LarrieuEtAl2023How @BallouEtAl2024Registered @VuorreEtAl2022Time @PallaviciniEtAl2022Effects.
 
-Understanding these confounds and the wider causal network of factors is of critical importance for a field which frequently justifies its resource expenditures with reference to potential for concrete interventions for players, policymakers, developers, health care professionals, and more @KowertQuandt2021Video @ColderCarrasEtAl2018Commercial @DanielsenEtAl2024Treatment. If we do not take causality seriously, the value of video game psychology will be largely relegated to forensics---descriptive explanations of why certain people might have experienced effects of their gaming on wellbeing after the fact---rather than actionable and predictive recommendations for changes that will avert problems (and maximize benefits) before they arise.
-
-We therefore see this study's findings as having direct implications for our interpretation of the existing literature and for methodological approachs going forward, as well as offering wider theoretical research directions for the field. We discuss each in turn. 
+Mapping and consolidating these confounds and the wider causal network of factors is of critical importance for a field which frequently justifies its resource expenditures with reference to potential for concrete interventions for players, policymakers, developers, health care professionals, and more @KowertQuandt2021Video @ColderCarrasEtAl2018Commercial @DanielsenEtAl2024Treatment. If we do not take causality seriously, the value of video game psychology will be largely relegated to forensics---descriptive explanations of why certain people might have experienced effects of their gaming on wellbeing after the fact---rather than actionable and predictive recommendations for changes that will avert problems (and maximize benefits) before they arise. We therefore see this study's findings as having direct implications for our interpretation of the existing literature and for methodological approaches going forward, as well as offering wider theoretical research directions for the field. We discuss each in turn. 
 
 == Evidence Base Implications 
 
-The breadth and prevalence of confounds identified in this study calls into question the inferential value of many previous correlational studies on the topic of video games and wellbeing @LarrieuEtAl2023How @BallouEtAl2024Registered @VuorreEtAl2022Time @PallaviciniEtAl2022Effects. Although studies in this area often account for stable demographic factors, the potential confounds listed here are much more rarely considered, let alone accounted for. If we assume that some of the participant-identified confounds do truly operate as confounds of this relationship, it means that effectively all of the reported findings of this relationship---both significant and null---are substantially biased and contain very little information about causality. 
+The breadth and prevalence of confounds identified in this study calls into question the inferential value of most quantitative studies on the topic of video games and wellbeing @LarrieuEtAl2023How @BallouEtAl2024Registered @VuorreEtAl2022Time @PallaviciniEtAl2022Effects. Although studies in this area often account for stable demographic factors, the potential confounds listed here are much more rarely considered, let alone accounted for. If we assume that some of the participant-identified confounds do truly operate as confounds of this relationship, it means that effectively all of the reported findings of this relationship---both significant and null---are substantially biased and contain very little information about causality. 
 
-Whether previous work is _systematically_ biased remains to  be seen. @tab-confounds indicates that omitting the participant-identified confounds could both upwardly and downwardly bias effects. The prevailing direction of bias will in part be a function of the (1) strength and (2) prevalence of each confounding factor. For example, if a study's sample contains a high number of people who have recently dealt with a family member's illness or death (for example, during the Covid-19 pandemic), the observed relationship may be negatively biased---more likely to show that gaming is negatively correlated with wellbeing, as people turned to games to deal with the stress or grief. But if a study coincides with a holiday period during which people have increased leisure time, observed relationships may be positively biased---more likely to show that gaming is positively correlated with wellbeing, as people enjoy the festivities and happen to have more available time to play games @Palomba2019Digital. 
+Whether previous work is _systematically_ biased remains unknown. @tab-confounds indicates that omitting the participant-identified confounds could both upwardly and downwardly bias effects. The prevailing direction of bias will in part be a function of the (1) strength and (2) prevalence of each confounding factor. For example, if a study's sample contains a high number of people who have recently dealt with a family member's illness or death (for example, during the Covid-19 pandemic), the observed relationship may be negatively biased---more likely to show that gaming is negatively correlated with wellbeing, as people turned to games to deal with the stress or grief. But if a study coincides with a holiday period during which people have increased leisure time, observed relationships may be positively biased---more likely to show that gaming is positively correlated with wellbeing, as people enjoy the festivities and happen to have more available time to play games @Palomba2019Digital. 
 
 == Methodological Implications
 
 First and foremost, our results point to a wide range of factors and constructs that researchers should consider measuring in future studies designed to assess the relationship between video game playtime and wellbeing.
 
-These factors are summarized in @tab-confounds. For this table, we selected the most prevalent subset of confounds reported by players, which (when unaccounted for) are therefore likely to have the largest biasing impacts on observed relationships. For each confound, we describe the general pattern of directionality observed in the data, and provide a suggestion for a questionnaire or other measurement tool that could be used to assess the presence of this confound in future studies. 
+These factors are summarized in @tab-confounds. For this table, we selected the most prevalent subset of player-reporteed confounds, which (if unaccounted for) are therefore likely to most strongly bias observed relationships. For each confound, we describe the general pattern of directionality, and suggest a questionnaire or other measurement tool that could be used to assess the confound in future studies. 
 
-Including these potential confounds in statistical models will require care and modelling expertise, especially in light of the fact that nearly all of them are _time-varying_ confounds---in contrast to a stable demographic factors like age and gender, a factor such as work-related stress is almost certain to vary over the course of a study. Media research has begun to place greater emphasis on longitudinal designs capable of evidencing within-person effects over time . While undeniably useful for improving our causal understanding @RohrerMurayama2023These, modelling time-varying confounds in longitudinal studies is more challenging than modelling confonuds (time-varying or time-invariant) in cross-sectional designs. We recommend researchers familiarize themselves with models and methods used for estimating causal effects in the presence of time-varying confounding @LohRen2023Tutorial.
-
-Given that effect sizes for the relationship between gaming and wellbeing are typically small or null, we speculate that models which fully adjust for these many time-invariant and time-varying confounds are unlikely to yield significant or meaningful estimates. While we still hope to see this borne out empirically, we nonetheless believe our findings---that, in the eyes of participants, this relationship is frequently and strongly confounded---add yet more support to calls for a focus on subgroups and situations where gaming may reliably affect wellbeing, rather on broad, population-level effects over long timescales @VuorreEtAl2024Affectivea @DrummondSauer2020Timesplitters.  
+Including these potential confounds in statistical models will require care and modelling expertise, especially in light of the fact that nearly all are _time-varying_ confounds---in contrast to stable demographic factors like age and gender, factors such as work-related stress will vary over the course of days or weeks. Media research has begun to place greater emphasis on longitudinal designs capable of evidencing within-person effects over time @RohrerMurayama2023These. While undeniably useful for improving our causal understanding, modelling time-varying confounds in longitudinal studies is more challenging than modelling confounds (time-varying or time-invariant) in cross-sectional designs. We recommend researchers familiarize themselves with models and methods used for estimating causal effects in the presence of time-varying confounding @LohRen2023Tutorial. 
 
 == Theoretical Implications
 
-Our findings include several high-level patterns that we believe could be valuable 'raw ingredients' for future theory development:
+Our findings include several high-level patterns that could be valuable 'raw ingredients' for future theory development:
 
 - When confounds cause tiredness or loss of focus, gaming tends to decrease; when confounds cause anxiety and stress, gaming tends to increase
-- Physical health conditions increase gaming when mild and not disruptive to bodily functions needed during gaming, but decrease gaming when severe enough to cause fatigue and lack of concentration 
+- Mild physical health conditions that do not interfere with essential bodily functions tend to increase gaming, but conditions severe enough to cause fatigue and lack of concentration decrease gaming 
 - Among highly-engaged players, family death or illness decreases wellbeing and increases gaming as people turn to gaming as a means to escape during the grieving period. 
 - Staycations increase gaming and wellbeing; holidays increase wellbeing but decrease gaming
-- Difficulties in romantic relationships are more likely to lead to reduced gaming, whereas difficulties in non-romantic relationships are more likely to lead to increased gaming
 
-Some of these findings pose challenges for previous theory. In particular, the finding that particularly low energy players actively avoid gaming (potentially in favor of other less demanding media) challenges mood management theory's prediction that players in a state of low arousal are likely to seek out high-arousal gameplay so as to return to a state of equilibrium @Zillmann1988Mood. Instead, our participants report that, in a state of particularly low arousal, they find gaming to be so excitatory that they avoid it entirely. We recommend that these potentially contradicting patterns of evidence be subjected to further validation, and if upheld, be used to more clearly identify boundary conditions and accommodations within existing theory such as mood management theory.
+Some of these findings challenge previous theory. In particular, the finding that low-energy players actively avoid gaming---potentially in favor of other less demanding media---contrasts with mood management theory's prediction that players in a state of low arousal are likely to seek out high-arousal gameplay so as to return to a state of equilibrium @Zillmann1988Mood. Instead, our participants report that, in a state of particularly low arousal, they find gaming to be overly excitatory and avoid it entirely. We recommend that these potentially contradicting patterns of evidence be subjected to further validation, and if upheld, be used to identify boundary conditions and accommodations within existing theories. We speculate that players may have an internal energy threshold below which gaming is perceived as too demanding, leading them to select lower-barrier alternatives such as TV or music. 
 
-It is vital to recognize that these causal patterns are undoubtedly more complicated and reciprocal than can be accounted for here. In particular, for some people gaming actively _helps manage_ the very issues that caused a change in both their gaming and wellbeing @IacovidesMekler2019role @LeeChen2023Seeking, drawing attention to timescales. Say increased work stress causes a person to both feel worse and play more games (confounding this relatoinship), but the increased gaming then stablizes  their mood. A survey conducted after this process has occurred would simply capture an increase in gaming with no corresponding change in wellbeing. It is crucial, therefore, for researchers to consider both direct effects and effects of the wider causal system, and design their studies to capture these on the timescales where they believe they will occur. In some cases, this may involve measuring intention to play games in the future, rather than simply current or past play (see e.g., #npc(<OuelletteWood1998Habit>)). 
+It is vital to recognize that these causal patterns are undoubtedly more complicated and reciprocal than can be accounted for here. In particular, for some people gaming actively _helps manage_ the very issues that caused a change in both their gaming and wellbeing @IacovidesMekler2019role @LeeChen2023Seeking—that is, they engage in digital emotion regulation @WadleyEtAl2020Digital. The process of emotion regulation through games draws attention to timescales. Say increased work stress causes a person to both feel worse and play more games (confounding this relationship), but the increased gaming then stabilizes  their mood. A survey conducted after this process has occurred would simply capture an increase in gaming with no corresponding change in wellbeing. 
+
+It is crucial, therefore, for researchers to consider both direct effects and effects of the wider causal system, and design their studies to capture these on the timescales where they believe they will occur. In some cases, this may involve measuring intention to play games in the future, rather than simply current or past play (see e.g., #npc(<OuelletteWood1998Habit>)). A complementary approach is to conduct studies explicitly designed to elicit players' and experts' causal knowledge across varying timescales, a method that can be supported with digital tools @YenEtAl2021Narratives @SalimEtAl2024Belief.
 
 == Limitations
 
@@ -686,11 +694,11 @@ Our findings are limited in several ways. First, players' sense-making of causal
 
 Second, as highlighted above, confounds represent just one element of wider and more complicated causal webs. We encourage further work to not just validate or refute these potential confounds, but to carefully explore the other contributing factors in these causal webs---specific exposures and mediators @BallouEtAl2024How, colliders @LampMacKinnon2024Correcting, differentiated wellbeing outcomes @HutaWaterman2014Eudaimonia, and so on. 
 
-Third, our sample is unlikely to be representative of the general population. The sample here consists of highly-engaged adult Xbox players (median daily playtime: 2.1 hours) and is majority male (79%); lesser-engaged gaming populations may be less likely to exhibit changes to their gaming behavior in response to third variables (e.g., because they are more likely to use other activities as a coping mechanism for stress). We encourage comparative work with other groups of players (e.g., different ages, platforms, or geographic regions) to understand how confounding might operate differently.
+Third, our sample was not intended and is unlikely to be representative of the general population. The sample here consists of highly-engaged adult Xbox players (median daily playtime: 2.1 hours) and is majority male (79%); lesser-engaged gaming populations may be less likely to exhibit changes to their gaming behavior in response to third variables (e.g., because they are more likely to use other activities as a coping mechanism for stress). We encourage comparative work with other groups of players (e.g., different ages, platforms, or geographic regions) to understand how confounding might operate differently.
 
 = Conclusion
 
-Though these findings reveal the challenges of drawing definitive causal conclusions from observational data about gaming, they also offer promising avenues for advancing the field. By systematically identifying relevant confounders, researchers can refine their methodological approaches and develop more robust theories of gaming's influence on wellbeing. With causality at the fore, the field's push towards richer data and stronger study designs (see e.g., #npc(<EgamiEtAl2024Causal>)) can fulfill our collective aim to optimize gaming experiences for players, promote wellbeing, and guide evidence-based policy. 
+Though these findings reveal the challenges of drawing definitive causal conclusions from observational data about gaming, they also offer promising avenues for advancing the field. By systematically identifying relevant confounders, researchers can refine their methodological approaches and theories of gaming's influence on wellbeing. With causality at the fore, the field's push towards richer data and stronger study designs (see e.g., #npc(<EgamiEtAl2024Causal>)) can fulfill our collective aim to optimize gaming experiences for players, promote wellbeing, and guide evidence-based policy. 
 
 #set heading(numbering: none)
 = Data Availability
@@ -701,12 +709,12 @@ Our data, materials, and coding tree can be found at https://osf.io/ck9bm.
 
 None to declare. 
 
-= Funding
+// = Funding
 
-This research was supported by the UK Economic and Social Research Council (ESRC) (ES/W012626/1).
+// This research was supported by the UK Economic and Social Research Council (ESRC) (ES/W012626/1).
 
-= Author Contributions
+// = Author Contributions
 
-Conceptualization: NB, AKP; Funding acquisition: AKP; Project administration: AKP; Supervision: AKP; Formal Analysis: NB, TH: Visualization: NB; Validation: TF; Writing – original draft: NB; Writing – review & editing: NB, TH, TF, AKP
+// Conceptualization: NB, AKP; Funding acquisition: AKP; Project administration: AKP; Supervision: AKP; Formal Analysis: NB, TH: Visualization: NB; Validation: TF; Writing – original draft: NB; Writing – review & editing: NB, TH, TF, AKP
 
 #bibliography("references.bib", style: "apa")
